@@ -25,6 +25,11 @@
     "office",
     "tableau"
   ],
+  "scripts": {
+    "clean": "npx rimraf dist && rm -rf node_modules",
+    "build": "npx gulp build",
+    "test": "npx gulp test"
+  },
   "files": [
     "bower.json",
     "dist/*.js",
@@ -35,7 +40,7 @@
     "test": "test"
   },
   "devDependencies": {
-    "chart.js": "~2.8.0",
+    "chart.js": "^3.0.0",
     "eslint-config-chartjs": "^0.1.0",
     "eslint-plugin-es": "^1.4.0",
     "eslint-plugin-html": "^5.0.3",
@@ -55,6 +60,7 @@
     "karma-spec-reporter": "^0.0.32",
     "merge2": "^1.2.3",
     "pixelmatch": "^4.0.2",
+    "rimraf": "^2.6.3",
     "rollup": "^1.11.2",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-istanbul": "^2.0.1",
@@ -63,6 +69,6 @@
     "yargs": "^13.2.2"
   },
   "peerDependencies": {
-    "chart.js": ">= 2.5.0 < 3"
+    "chart.js": ">= 3"
   }
 }
